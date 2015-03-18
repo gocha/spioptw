@@ -41,13 +41,12 @@ BOOL IsSupportedEx(char *filename, char *data)
 {
   HMPFILEHEADER* hmpHead = (HMPFILEHEADER*) data;
 
-  /* お約束のシグネチャチェック、なの */
+  /* シグネチャを確認 */
   if(hmpHead->hfType != 0x4d48) /* "HM" */
   {
     return FALSE;
   }
 
-  /* もう終わり、なの */
   return TRUE;
 }
 

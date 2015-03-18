@@ -42,13 +42,13 @@ BOOL IsSupportedEx(char *filename, char *data)
   PMPFILEHEADER* pmpHead = (PMPFILEHEADER*) data;
   DWORD minFlgMapLen;
 
-  /* お約束のシグネチャチェック、なのっ */
+  /* シグネチャを確認 */
   if(pmpHead->pfType != 0x4d50) /* "PM" */
   {
     return FALSE;
   }
 
-  /* フラグマップのサイズチェック、なのっ */
+  /* フラグマップのサイズ範囲を確認 */
   minFlgMapLen = pmpHead->pfWidth * pmpHead->pfHeight / 8;
   if((minFlgMapLen == 0)
       || (pmpHead->pfFlgMapBLen < minFlgMapLen)
