@@ -1,5 +1,6 @@
 Susie plugin for OPTWORKS games (spioptw)
 =========================================
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/1ygpy7b1v8m9vdap/branch/master?svg=true)](https://ci.appveyor.com/project/gocha/spioptw/branch/master)
 
 spioptw は [OPTWORKS](http://www.toranoana.jp/mailorder/cit/circle/19/66/5730303436363139/ns_4f5054574f524b53_01.html) 製ゲーム向けの Susie プラグインパッケージです。
 
